@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <form>
+                <p><label for="data de nascimento">Ano de Nascimento*</label></p>
+                <p><input type="number" name="ano" id="ano" required></p>
+                <p><label for="nome">Nome*</label></p>
+                <p><input type="text" name="nome" id="nome" required></p>
+                <p><label for="sexo">Sexo</label></p>
+                <p><input type="radio" name="Masc" class="sexo" checked>
+                    <label>Masculino</label>
+                    <input type="radio" name="Masc" class="sexo">
+                    <label>Feminino</label>
+
+                    <!--Outra forma de fazer a seleção de sexo>
+                        <select name="sexo" id="sexo" required>
+                        <option value="Mas">Masculino</option>
+                        <option value="Fem">Feminino</option>
+                    </select-->
+                </p>
+                <p><input type="button" value="Verificar" onclick="verificar()"></p>
+            </form>
+        </div>
+
+        <div id="result">
+            <img id="foto">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;Projeto varificador de idade</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
